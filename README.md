@@ -1,4 +1,4 @@
-# FT_PRINTF_42
+# **42 / COMMON CORE / FT_PRINTF**  
 Project that replicates the original 'printf' function.
 
 - `%c` - Prints a single character.  
