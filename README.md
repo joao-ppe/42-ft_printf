@@ -3,7 +3,7 @@ Project that replicates the original 'printf' function.
 
 - `%c` - Prints a single character.  
 - `%s` - Prints a string (as defined by the common C convention).  
-- `%p` - The void * pointer argument has to be printed in hexadecimal format.  
+- `%p` - Prints a pointer address in hexadecimal format.  
 - `%d` - Prints a decimal (base 10) number.  
 - `%i` - Prints an integer in base 10.  
 - `%u` - Prints an unsigned decimal (base 10) number.  
