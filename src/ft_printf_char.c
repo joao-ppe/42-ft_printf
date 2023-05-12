@@ -1,29 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_printf_char.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/12 17:39:41 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/05/04 15:12:23 by joao-ppe         ###   ########.fr       */
+/*   Created: 2023/05/09 19:05:20 by joao-ppe          #+#    #+#             */
+/*   Updated: 2023/05/11 19:01:30 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/ft_printf.h"
 
-char	*ft_strrchr(const char *s, int c)
+int	ft_putchar(int c)
+{
+	write(1, &c, 1);
+	return (1);
+}
+
+int	ft_putstr(char *s)
 {
 	int	i;
 
 	i = 0;
+	if (!s)
+		return (write(1, "(null)", 6));
 	while (s[i])
-		i++;
-	while (i >= 0)
 	{
-		if (s[i] == (unsigned char)c)
-			return (&((char *)s)[i]);
-		i--;
+		ft_putchar(s[i]);
+		i++;
 	}
-	return (NULL);
+	return (i);
 }
