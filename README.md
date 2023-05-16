@@ -10,3 +10,6 @@ Project that replicates the original 'printf' function.
 - `%x` - Prints a number in hexadecimal (base 16) lowercase format.  
 - `%X` - Prints a number in hexadecimal (base 16) uppercase format.  
 - `%%` - Prints a percent sign.  
+  
+  
+# GRADE : 100
