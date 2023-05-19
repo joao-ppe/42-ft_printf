@@ -6,7 +6,7 @@
 /*   By: joao-ppe <joao-ppe@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 14:15:26 by joao-ppe          #+#    #+#             */
-/*   Updated: 2023/05/11 18:58:22 by joao-ppe         ###   ########.fr       */
+/*   Updated: 2023/05/19 15:50:05 by joao-ppe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static int	ft_print_format(char spec, va_list ap)
 		return (0);
 	else if (spec == 'c')
 		count += ft_putchar(va_arg(ap, int));
-	if (spec == 's')
+	else if (spec == 's')
 		count += ft_putstr(va_arg(ap, char *));
 	else if (spec == 'p')
 		count += ft_putpointer(va_arg(ap, unsigned long));
