@@ -14,6 +14,8 @@
 
 int	ft_putchar(int c)
 {
+	if (!c)
+		return (0);
 	write(1, &c, 1);
 	return (1);
 }
